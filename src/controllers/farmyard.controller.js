@@ -54,7 +54,7 @@ exports.create = (req, res) => {
           error: "404",
         });
       } else {
-        await chicken.destroy();
+        await farmyard.destroy();
         res.status(200).json({
           message: "Farmyard deleted successfully  ",
           farmyard: farmyard,

@@ -14,11 +14,10 @@ exports.create = (req, res) => {
 
     Chicken.create(chicken)
       .then((result) => {
-        res.send("success! ");
+        res.send("Chicken added with success! ");
       })
       .catch((err) => console.log("err"));
   } catch (err) {
-    console.log("error here !");
     res.status(500).send({
       message: err.message || "Some error occurred .",
     });
