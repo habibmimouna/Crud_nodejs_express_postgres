@@ -59,7 +59,6 @@ const options = {
             200:{
                 description:'request passed with success ! ',
                 contents:'application/json'
-
             },
             404: {
                 description: 'Id not found- use an already existing id',
